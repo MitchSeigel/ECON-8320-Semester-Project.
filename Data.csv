@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 seriesID,year,periodName,latest,value
 LNS11000000,2024,November,true,168286
 LNS12000000,2024,October,,168479
@@ -213,3 +214,190 @@ CIU1010000000000A,2024,February,,167426
 ,2023,3rd Quarter,,4.3
 ,2023,2nd Quarter,,4.5
 ,2023,1st Quarter,,4.8
+=======
+seriesID,Series Name,year,Month,latest,value
+LNS11000000,Civilian Labor Force,2024,November,true,168286
+LNS11000000,Civilian Labor Force,2024,October,,168479
+LNS11000000,Civilian Labor Force,2024,September,,168699
+LNS11000000,Civilian Labor Force,2024,August,,168549
+LNS11000000,Civilian Labor Force,2024,July,,168429
+LNS11000000,Civilian Labor Force,2024,June,,168009
+LNS11000000,Civilian Labor Force,2024,May,,167732
+LNS11000000,Civilian Labor Force,2024,April,,167982
+LNS11000000,Civilian Labor Force,2024,March,,167895
+LNS11000000,Civilian Labor Force,2024,February,,167426
+LNS11000000,Civilian Labor Force,2024,January,,167276
+LNS11000000,Civilian Labor Force,2023,December,,167451
+LNS11000000,Civilian Labor Force,2023,November,,168127
+LNS11000000,Civilian Labor Force,2023,October,,167723
+LNS11000000,Civilian Labor Force,2023,September,,167897
+LNS11000000,Civilian Labor Force,2023,August,,167840
+LNS11000000,Civilian Labor Force,2023,July,,167113
+LNS11000000,Civilian Labor Force,2023,June,,167000
+LNS11000000,Civilian Labor Force,2023,May,,166823
+LNS11000000,Civilian Labor Force,2023,April,,166678
+LNS11000000,Civilian Labor Force,2023,March,,166690
+LNS11000000,Civilian Labor Force,2023,February,,166263
+LNS11000000,Civilian Labor Force,2023,January,,165871
+LNS12000000,Civilian Employment,2024,November,true,161141
+LNS12000000,Civilian Employment,2024,October,,161496
+LNS12000000,Civilian Employment,2024,September,,161864
+LNS12000000,Civilian Employment,2024,August,,161434
+LNS12000000,Civilian Employment,2024,July,,161266
+LNS12000000,Civilian Employment,2024,June,,161199
+LNS12000000,Civilian Employment,2024,May,,161083
+LNS12000000,Civilian Employment,2024,April,,161491
+LNS12000000,Civilian Employment,2024,March,,161466
+LNS12000000,Civilian Employment,2024,February,,160968
+LNS12000000,Civilian Employment,2024,January,,161152
+LNS12000000,Civilian Employment,2023,December,,161183
+LNS12000000,Civilian Employment,2023,November,,161866
+LNS12000000,Civilian Employment,2023,October,,161280
+LNS12000000,Civilian Employment,2023,September,,161550
+LNS12000000,Civilian Employment,2023,August,,161500
+LNS12000000,Civilian Employment,2023,July,,161209
+LNS12000000,Civilian Employment,2023,June,,161004
+LNS12000000,Civilian Employment,2023,May,,160707
+LNS12000000,Civilian Employment,2023,April,,160962
+LNS12000000,Civilian Employment,2023,March,,160824
+LNS12000000,Civilian Employment,2023,February,,160301
+LNS12000000,Civilian Employment,2023,January,,160152
+LNS13000000,Civilian Unemployment,2024,November,true,7145
+LNS13000000,Civilian Unemployment,2024,October,,6984
+LNS13000000,Civilian Unemployment,2024,September,,6834
+LNS13000000,Civilian Unemployment,2024,August,,7115
+LNS13000000,Civilian Unemployment,2024,July,,7163
+LNS13000000,Civilian Unemployment,2024,June,,6811
+LNS13000000,Civilian Unemployment,2024,May,,6649
+LNS13000000,Civilian Unemployment,2024,April,,6492
+LNS13000000,Civilian Unemployment,2024,March,,6429
+LNS13000000,Civilian Unemployment,2024,February,,6458
+LNS13000000,Civilian Unemployment,2024,January,,6124
+LNS13000000,Civilian Unemployment,2023,December,,6268
+LNS13000000,Civilian Unemployment,2023,November,,6262
+LNS13000000,Civilian Unemployment,2023,October,,6443
+LNS13000000,Civilian Unemployment,2023,September,,6347
+LNS13000000,Civilian Unemployment,2023,August,,6340
+LNS13000000,Civilian Unemployment,2023,July,,5904
+LNS13000000,Civilian Unemployment,2023,June,,5997
+LNS13000000,Civilian Unemployment,2023,May,,6117
+LNS13000000,Civilian Unemployment,2023,April,,5715
+LNS13000000,Civilian Unemployment,2023,March,,5866
+LNS13000000,Civilian Unemployment,2023,February,,5962
+LNS13000000,Civilian Unemployment,2023,January,,5719
+LNS14000000,Unemployment Rate,2024,November,true,4.2
+LNS14000000,Unemployment Rate,2024,October,,4.1
+LNS14000000,Unemployment Rate,2024,September,,4.1
+LNS14000000,Unemployment Rate,2024,August,,4.2
+LNS14000000,Unemployment Rate,2024,July,,4.3
+LNS14000000,Unemployment Rate,2024,June,,4.1
+LNS14000000,Unemployment Rate,2024,May,,4.0
+LNS14000000,Unemployment Rate,2024,April,,3.9
+LNS14000000,Unemployment Rate,2024,March,,3.8
+LNS14000000,Unemployment Rate,2024,February,,3.9
+LNS14000000,Unemployment Rate,2024,January,,3.7
+LNS14000000,Unemployment Rate,2023,December,,3.7
+LNS14000000,Unemployment Rate,2023,November,,3.7
+LNS14000000,Unemployment Rate,2023,October,,3.8
+LNS14000000,Unemployment Rate,2023,September,,3.8
+LNS14000000,Unemployment Rate,2023,August,,3.8
+LNS14000000,Unemployment Rate,2023,July,,3.5
+LNS14000000,Unemployment Rate,2023,June,,3.6
+LNS14000000,Unemployment Rate,2023,May,,3.7
+LNS14000000,Unemployment Rate,2023,April,,3.4
+LNS14000000,Unemployment Rate,2023,March,,3.5
+LNS14000000,Unemployment Rate,2023,February,,3.6
+LNS14000000,Unemployment Rate,2023,January,,3.4
+CES0000000001,Total Nonfarm Employment,2024,November,true,159288
+CES0000000001,Total Nonfarm Employment,2024,October,,159061
+CES0000000001,Total Nonfarm Employment,2024,September,,159025
+CES0000000001,Total Nonfarm Employment,2024,August,,158770
+CES0000000001,Total Nonfarm Employment,2024,July,,158692
+CES0000000001,Total Nonfarm Employment,2024,June,,158548
+CES0000000001,Total Nonfarm Employment,2024,May,,158430
+CES0000000001,Total Nonfarm Employment,2024,April,,158214
+CES0000000001,Total Nonfarm Employment,2024,March,,158106
+CES0000000001,Total Nonfarm Employment,2024,February,,157796
+CES0000000001,Total Nonfarm Employment,2024,January,,157560
+CES0000000001,Total Nonfarm Employment,2023,December,,157304
+CES0000000001,Total Nonfarm Employment,2023,November,,157014
+CES0000000001,Total Nonfarm Employment,2023,October,,156832
+CES0000000001,Total Nonfarm Employment,2023,September,,156667
+CES0000000001,Total Nonfarm Employment,2023,August,,156421
+CES0000000001,Total Nonfarm Employment,2023,July,,156211
+CES0000000001,Total Nonfarm Employment,2023,June,,156027
+CES0000000001,Total Nonfarm Employment,2023,May,,155787
+CES0000000001,Total Nonfarm Employment,2023,April,,155484
+CES0000000001,Total Nonfarm Employment,2023,March,,155206
+CES0000000001,Total Nonfarm Employment,2023,February,,155060
+CES0000000001,Total Nonfarm Employment,2023,January,,154773
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2024,November,true,33.7
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2024,October,,33.7
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2024,September,,33.7
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2024,August,,33.7
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2024,July,,33.7
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2024,June,,33.7
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2024,May,,33.7
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2024,April,,33.7
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2024,March,,33.8
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2024,February,,33.7
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2024,January,,33.6
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2023,December,,33.8
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2023,November,,33.7
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2023,October,,33.8
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2023,September,,33.8
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2023,August,,33.8
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2023,July,,33.8
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2023,June,,33.8
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2023,May,,33.8
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2023,April,,33.8
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2023,March,,33.9
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2023,February,,33.9
+CES0500000007,Total Private Average Weekly Hours of Prod. and Nonsup. Employees,2023,January,,34.0
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2024,November,true,35.61
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2024,October,,35.48
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2024,September,,35.33
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2024,August,,35.22
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2024,July,,35.07
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2024,June,,34.99
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2024,May,,34.88
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2024,April,,34.75
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2024,March,,34.69
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2024,February,,34.56
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2024,January,,34.51
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2023,December,,34.34
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2023,November,,34.23
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2023,October,,34.10
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2023,September,,34.01
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2023,August,,33.91
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2023,July,,33.84
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2023,June,,33.70
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2023,May,,33.54
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2023,April,,33.44
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2023,March,,33.31
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2023,February,,33.15
+CES0500000003,Total Private Average Hourly Earnings of All Employees,2023,January,,33.07
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2024,November,true,30.57
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2024,October,,30.48
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2024,September,,30.36
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2024,August,,30.26
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2024,July,,30.16
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2024,June,,30.07
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2024,May,,29.95
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2024,April,,29.83
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2024,March,,29.79
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2024,February,,29.70
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2024,January,,29.64
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2023,December,,29.51
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2023,November,,29.42
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2023,October,,29.29
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2023,September,,29.18
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2023,August,,29.09
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2023,July,,29.03
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2023,June,,28.90
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2023,May,,28.79
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2023,April,,28.68
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2023,March,,28.58
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2023,February,,28.42
+CES0500000008,Total Private Average Hourly Earnings of Prod. and Nonsup. Employees,2023,January,,28.31
+>>>>>>> 51a2d76d6d61157f75b3687571c27ccd4f5df7c5
