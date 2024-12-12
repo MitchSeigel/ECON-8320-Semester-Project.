@@ -9,26 +9,41 @@ st.title('BLS Dashboard')
 #data file call
 data = pd.read_csv( "https://raw.githubusercontent.com/MitchSeigel/ECON-8320-Semester-Project./refs/heads/main/Data.csv")
 
+#concatinate year and month in a new column for ease of use in dashboard
 data['year_month'] = data['year'].astype(str) + '_' + data['Month']
 
-#directions above first dropdown
-selected_series = st.multiselect("Select Series to Display", data["Series Name"].unique())
+# Dropdown for Series Names
+selected_series = st.multiselect(
+    "Select Series Names to display:",
+    data['Series Name'].unique(),
+    default=data['Series Name'].unique()  # Default to all series
+)
+
+# Dropdowns for Year-Month (x-axis)
+year_month_options = sorted(data["year_month"].unique())
+selected_x_start = st.selectbox("Select Start Year-Month", year_month_options)
+selected_x_end = st.selectbox("Select End Year-Month", year_month_options)
 
 
-# x-axis
-x_axis = 'year_month'
+# Filter data based on selections
+filtered_df = data[data['Series Name'].isin(selected_series)]
 
-#create the chart when one or more serries are selected
-if selected_series and x_axis:
-    chart = alt.Chart(data[data["Series Name"].isin(selected_series)]).mark_line().encode(
-            x=x_axis,
-            y="value:Q",  # Specify value as quantitative
-            color="Series Name:N",
-            tooltip=["Series Name", "value", x_axis]
-    )
+# Filter data based on year_month range
+start_index = year_month_options.index(selected_x_start)
+end_index = year_month_options.index(selected_x_end)
+filtered_df = filtered_df[filtered_df["year_month"].isin(year_month_options[start_index : end_index+1])]
 
-    # Display the chart in Streamlit
-    st.altair_chart(chart, use_container_width=True)
 
-else: # Handle cases with no selections
-    st.write("Select at least one series to display the chart.")
+# Create the line chart
+chart = alt.Chart(filtered_df).mark_line().encode(
+    x=alt.X('year_month', title="Year-Month", sort=year_month_options),
+    y=alt.Y('value', title="Value"),
+    color='Series Name',
+    tooltip=['Series Name', 'year_month', 'value']
+).properties(
+    width=600,
+    height=400
+).interactive()
+
+# Display the chart
+st.altair_chart(chart, use_container_width=True)
