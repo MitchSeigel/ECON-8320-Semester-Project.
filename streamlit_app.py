@@ -10,36 +10,46 @@ st.title('Customizable BLS Metrics Dashboard')
 data = pd.read_csv( "https://raw.githubusercontent.com/MitchSeigel/ECON-8320-Semester-Project./refs/heads/main/Data.csv")
 
 #concatinate year and month in a new column for ease of use in dashboard
-data['year_month'] = data['year'].astype(str) + '_' + data['Month']
+data['Year-Month'] = data['year'].astype(str) + '-' + data['Month']
 
-# Dropdown for Series Names
-selected_series = st.multiselect(
-    "Select Series Names to display:",
-    data['Series Name'].unique(),
-    default=data['Series Name'].unique()
-)
+#create a datetime column based off of Year-Month
+data['Date'] = pd.to_datetime(data['Year-Month'], format='%Y-%B', errors='coerce')
 
-# Dropdowns for Year-Month
-year_month_options = sorted(data["year_month"].unique())
-selected_x_start = st.selectbox("Select Start Year-Month", year_month_options)
-selected_x_end = st.selectbox("Select End Year-Month", year_month_options)
+#sort by the date
+data = data.sort_values('Date')
 
-# Filter data based on series name selections and year-month selections
-filtered_df = data[data['Series Name'].isin(selected_series)]
-start_index = year_month_options.index(selected_x_start)
-end_index = year_month_options.index(selected_x_end)
-filtered_df = filtered_df[filtered_df["year_month"].isin(year_month_options[start_index : end_index+1])]
+#date list for drop-downs
+Date = sorted(data['Date'].unique())
 
-# Create the line chart
-chart = alt.Chart(filtered_df).mark_line().encode(
-    x=alt.X('year_month', title="Year-Month", sort=year_month_options),
+#create dropdowns for start and end date
+start_Date = st.selectbox("Select Start Date", Date)
+end_Date = st.selectbox("Select End Date", Date, index=len(Date)-1)
+
+#filter data based on selected dates
+filtered_data = data[
+    (data['Date'] >= start_Date) & (data['Date'] <= end_Date)
+]
+
+#create series list for drop-down menu
+available_series = sorted(filtered_data['Series Name'].unique())
+
+#create the actual drop-down menu
+selected_series = st.multiselect("Select Series to Display", available_series, default=available_series)
+
+#filter data based on series selection
+filtered_data = filtered_data[filtered_data['Series Name'].isin(selected_series)]
+
+#create the line chart
+chart = alt.Chart(filtered_data).mark_line().encode(
+    x=alt.X('Date', title="Date"),
     y=alt.Y('value', title="Value"),
     color='Series Name',
-    tooltip=['Series Name', 'year_month', 'value']
+    tooltip=['Series Name', 'Date', 'value']
 ).properties(
-    width=600,
+    width=800,
     height=400
 ).interactive()
 
-# Display the chart
+# Display the chart in Streamlit
 st.altair_chart(chart, use_container_width=True)
+
