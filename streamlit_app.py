@@ -16,7 +16,7 @@ data['year_month'] = data['year'].astype(str) + '_' + data['Month']
 selected_series = st.multiselect(
     "Select Series Names to display:",
     data['Series Name'].unique(),
-    default=data['Series Name'].unique()  # Default to all series
+    default=data['Series Name'].unique()
 )
 
 # Dropdowns for Year-Month
