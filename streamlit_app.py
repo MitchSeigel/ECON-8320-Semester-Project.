@@ -4,7 +4,7 @@ import numpy as np
 import altair as alt
 
 #dashboard title
-st.title('BLS Dashboard')
+st.title('Customizable BLS Metrics Dashboard')
 
 #data file call
 data = pd.read_csv( "https://raw.githubusercontent.com/MitchSeigel/ECON-8320-Semester-Project./refs/heads/main/Data.csv")
@@ -19,20 +19,16 @@ selected_series = st.multiselect(
     default=data['Series Name'].unique()  # Default to all series
 )
 
-# Dropdowns for Year-Month (x-axis)
+# Dropdowns for Year-Month
 year_month_options = sorted(data["year_month"].unique())
 selected_x_start = st.selectbox("Select Start Year-Month", year_month_options)
 selected_x_end = st.selectbox("Select End Year-Month", year_month_options)
 
-
-# Filter data based on selections
+# Filter data based on series name selections and year-month selections
 filtered_df = data[data['Series Name'].isin(selected_series)]
-
-# Filter data based on year_month range
 start_index = year_month_options.index(selected_x_start)
 end_index = year_month_options.index(selected_x_end)
 filtered_df = filtered_df[filtered_df["year_month"].isin(year_month_options[start_index : end_index+1])]
-
 
 # Create the line chart
 chart = alt.Chart(filtered_df).mark_line().encode(
