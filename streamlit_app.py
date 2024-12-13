@@ -50,6 +50,6 @@ chart = alt.Chart(filtered_data).mark_line().encode(
     height=400
 ).interactive()
 
-# Display the chart in Streamlit
+#display the chart in Streamlit
 st.altair_chart(chart, use_container_width=True)
 
